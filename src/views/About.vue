@@ -60,10 +60,11 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 const images = import.meta.glob('../../public/house-images/*.jpg')
+console.log(images)
 const mapped: string[] = []
 
 for (let img in images) {
-  mapped.push(new URL(`/house-images/${img}`, import.meta.url).href)
+  mapped.push(new URL(`/house-images/${img}`, window.location.origin).href)
 }
 </script>
 
