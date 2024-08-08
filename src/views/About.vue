@@ -64,7 +64,7 @@ console.log(images)
 const mapped: string[] = []
 
 for (let img in images) {
-  mapped.push(new URL(`/house-images/${img}`).href)
+  mapped.push(img)
 }
 </script>
 
