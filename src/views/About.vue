@@ -63,7 +63,7 @@ const images = import.meta.glob('../../public/house-images/*.jpg')
 const mapped: string[] = []
 
 for (let img in images) {
-  mapped.push(new URL(`/house-images/${img}`, window.location.origin).href)
+  mapped.push(new URL(`/house-images/${img}`, import.meta.url).href)
 }
 </script>
 
