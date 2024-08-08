@@ -1,0 +1,149 @@
+<template>
+  <footer class="main-footer">
+    <router-link to="/" v-slot="{ href, navigate }">
+      <img height="150px" :src="logo" v-if="!isMobile" :href="href" @click="navigate" />
+    </router-link>
+    <div class="footer-links-container">
+      <h1>Quick Links</h1>
+      <a class="footer-review-link" href="https://g.page/r/CdEX9Hz_lDaiEAE/review"
+        >Leave us a Review!</a
+      >
+      <router-link class="footer-review-link" to="/projects">Projects</router-link>
+      <router-link class="footer-review-link" to="/contact">Contact</router-link>
+    </div>
+
+    <div class="mobile-contact-container" v-if="isMobile">
+      <img class="email-icon" :src="emailIcon" href="mailto:sjshomes2014@gmail.com" />
+      <img class="phone-icon" :src="phoneIcon" href="tel:+1-780-966-1062" />
+    </div>
+    <div class="contact-container" v-else>
+      <h1 class="contact-header">Contact</h1>
+      <img class="email-icon" :src="emailIcon" />
+      <p class="email">sjshomes2014@gmail.com</p>
+      <img class="phone-icon" :src="phoneIcon" />
+      <p class="phone">(780) 966-0162<br />(587)-590-5343</p>
+    </div>
+  </footer>
+</template>
+
+<script setup lang="ts">
+import emailIcon from '/images/email-icon.svg'
+import phoneIcon from '/images/phone-icon.svg'
+import logo from '/images/header-logo-transparent.png'
+import { RouterLink } from 'vue-router'
+import { isMobile } from '@/helpers/mobile-helper'
+</script>
+
+<style scoped>
+.main-footer {
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .footer-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .footer-review-link {
+      text-decoration: none;
+    }
+  }
+
+  .mobile-contact-container {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+
+    .email-icon {
+      height: 40px;
+    }
+    .phone-icon {
+      height: 40px;
+    }
+  }
+
+  a {
+    color: white;
+  }
+}
+@media (min-width: 40rem) {
+  .main-footer {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .footer-links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+
+      h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .footer-review-link {
+        position: relative;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          color: #c2a460;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 3px;
+          bottom: -5px;
+          left: 0;
+          background-color: #c2a460;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+
+        &:hover::before {
+          transform: scaleX(1);
+        }
+      }
+    }
+
+    /* might want to redo this grid */
+    .contact-container {
+      display: grid;
+      grid-template-columns: 25px auto;
+      align-items: center;
+      column-gap: 8px;
+
+      .contact-header {
+        grid-column: span 2;
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .phone {
+        align-self: baseline;
+      }
+    }
+
+    a {
+    }
+  }
+}
+</style>

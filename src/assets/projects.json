@@ -1,0 +1,23 @@
+[
+  {
+    "img": "house-placeholder-image.jpg",
+    "title": "384 Bluff Cove, Leduc",
+    "sqft": "1319",
+    "bedrooms": "3",
+    "bathrooms": "3"
+  },
+  {
+    "img": "house-placeholder-image.jpg",
+    "title": "397 Bluff Cove, Leduc",
+    "sqft": "1701",
+    "bedrooms": "3",
+    "bathrooms": "2"
+  },
+  {
+    "img": "house-placeholder-image.jpg",
+    "title": "500 Bluff Lane, Leduc",
+    "sqft": "1326",
+    "bedrooms": "3",
+    "bathrooms": "3"
+  }
+]
