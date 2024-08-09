@@ -45,7 +45,7 @@
     </div>
     <div class="carousel-container striped-background">
       <Carousel :autoplay="3000" :wrap-around="true" :transition="1500"
-        ><slide v-for="slide in mapped" :key="slide"
+        ><slide v-for="slide in images" :key="slide"
           ><img :src="slide" class="current-slide"
         /></slide>
         <template #addons>
@@ -59,14 +59,17 @@
 <script setup lang="ts">
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-const images = import.meta.glob('../../public/house-images/*.jpg', { eager: true })
+// const images = import.meta.glob('../../public/house-images/*.jpg')
+const images = Object.values(
+  import.meta.glob('../../public/house-images/*.jpg', { eager: true, as: 'url' })
+)
 console.log(images)
-const mapped: string[] = []
+// const mapped: string[] = []
 
-for (let img in images) {
-  mapped.push(img)
-}
-console.log(mapped)
+// for (let img in images) {
+//   console.log(images[img])
+// }
+// console.log(mapped)
 </script>
 
 <style scoped>
