@@ -2,7 +2,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <div class="home-container">
     <div class="highlight-video-container">
-      <video width="100%" autoplay muted loop>
+      <video width="100%" autoplay muted loop playsinline>
         <source src="/videos/house-walkthrough.mp4" type="video/mp4" />
       </video>
     </div>

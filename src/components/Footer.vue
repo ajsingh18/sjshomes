@@ -13,8 +13,8 @@
     </div>
 
     <div class="mobile-contact-container" v-if="isMobile">
-      <img class="email-icon" :src="emailIcon" href="mailto:sjshomes2014@gmail.com" />
-      <img class="phone-icon" :src="phoneIcon" href="tel:+1-780-966-1062" />
+      <a href="mailto:sjshomes2014@gmail.com"> <img class="email-icon" :src="emailIcon" /></a>
+      <a href="tel:+1-780-966-1062"><img class="phone-icon" :src="phoneIcon" /></a>
     </div>
     <div class="contact-container" v-else>
       <h1 class="contact-header">Contact</h1>

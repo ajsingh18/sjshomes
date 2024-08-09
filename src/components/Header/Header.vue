@@ -164,6 +164,7 @@ useDetectOutsideClick(navRef, () => {
     list-style: none;
     text-decoration: none;
     font-size: 32px;
+    padding-left: 0;
 
     .mobile-nav-item {
       text-align: center;

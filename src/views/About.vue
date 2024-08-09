@@ -59,13 +59,14 @@
 <script setup lang="ts">
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-const images = import.meta.glob('../../public/house-images/*.jpg')
+const images = import.meta.glob('../../public/house-images/*.jpg', { eager: true })
 console.log(images)
 const mapped: string[] = []
 
 for (let img in images) {
   mapped.push(img)
 }
+console.log(mapped)
 </script>
 
 <style scoped>
