@@ -59,17 +59,9 @@
 <script setup lang="ts">
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-// const images = import.meta.glob('../../public/house-images/*.jpg')
 const images = Object.values(
   import.meta.glob('../../public/house-images/*.jpg', { eager: true, as: 'url' })
 )
-console.log(images)
-// const mapped: string[] = []
-
-// for (let img in images) {
-//   console.log(images[img])
-// }
-// console.log(mapped)
 </script>
 
 <style scoped>
@@ -134,7 +126,6 @@ console.log(images)
 
   .current-slide {
     height: 260px;
-    width: 260px;
   }
 }
 
@@ -198,7 +189,14 @@ console.log(images)
     padding-top: 16px;
     .current-slide {
       height: 800px;
-      width: 900px;
+    }
+  }
+}
+
+@media (min-width: 1450px) {
+  .carousel-container {
+    .current-slide {
+      height: 1000px;
     }
   }
 }
