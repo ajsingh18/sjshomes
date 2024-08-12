@@ -43,25 +43,59 @@
         </p>
       </div>
     </div>
-    <div class="carousel-container striped-background">
-      <Carousel :autoplay="3000" :wrap-around="true" :transition="1500"
-        ><slide v-for="slide in images" :key="slide"
-          ><img :src="slide" class="current-slide"
-        /></slide>
-        <template #addons>
-          <navigation />
-          <pagination /> </template
-      ></Carousel>
+    <div class="striped-background carousel-container">
+      <VueFlux :options="options" :rscs="rscs" :transitions="transitions">
+        <template #preloader="preloaderProps">
+          <FluxPreloader v-bind="preloaderProps" />
+        </template>
+
+        <template #controls="controlsProps">
+          <FluxControls v-bind="controlsProps" />
+        </template>
+
+        <template #pagination="paginationProps">
+          <FluxPagination v-bind="paginationProps" />
+        </template>
+      </VueFlux>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import { reactive, shallowReactive } from 'vue'
+import {
+  VueFlux,
+  FluxPreloader,
+  FluxControls,
+  FluxPagination,
+  Img,
+  Fade,
+  ResizeTypes
+} from 'vue-flux'
+import 'vue-flux/style.css'
+
+const options = reactive({
+  allowFullscreen: false,
+  allowToSkipTransition: true,
+  autohideTime: 2500,
+  autoplay: true,
+  bindKeys: false,
+  delay: 5000,
+  enableGestures: true,
+  infinite: true,
+  lazyLoad: true,
+  lazyLoadAfter: 3
+})
+const transitions = shallowReactive([Fade])
+
 const images = Object.values(
   import.meta.glob('../../public/house-images/*.jpg', { eager: true, as: 'url' })
 )
+const mapImg = images.map((x) => {
+  return new Img(x, '', ResizeTypes.fit)
+})
+
+const rscs = shallowReactive(mapImg)
 </script>
 
 <style scoped>
@@ -123,10 +157,6 @@ const images = Object.values(
 
 .carousel-container {
   padding: 16px 0;
-
-  .current-slide {
-    height: 260px;
-  }
 }
 
 @media (min-width: 60rem) {
