@@ -20,13 +20,6 @@ import projects from '@/assets/projects.json'
 
 <style scoped>
 /* Add your styles here */
-
-@media (max-width: 42rem) {
-  .project-container h1,
-  .project-container p {
-    text-align: center;
-  }
-}
 .project-container {
   display: flex;
   flex-direction: column;
@@ -46,7 +39,20 @@ import projects from '@/assets/projects.json'
   .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: unset;
+  }
+}
+
+@media (max-width: 42rem) {
+  .project-container h1,
+  .project-container p {
+    text-align: center;
+  }
+
+  .project-container {
+    .projects-container {
+      justify-content: center;
+    }
   }
 }
 </style>
