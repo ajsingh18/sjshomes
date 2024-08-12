@@ -19,5 +19,12 @@
     "sqft": "1326",
     "bedrooms": "3",
     "bathrooms": "3"
+  },
+  {
+    "img": "coming-soon.png",
+    "title": "Prescott, Spruce Grove",
+    "sqft": "0",
+    "bedrooms": "0",
+    "bathrooms": "0"
   }
 ]
