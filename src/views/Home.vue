@@ -3,7 +3,7 @@
   <div class="home-container">
     <div class="highlight-video-container">
       <video width="100%" autoplay muted loop playsinline preload="auto">
-        <source src="/videos/house-walkthrough.mp4" type="video/mp4" />
+        <source src="/videos/withimage.mp4" type="video/mp4" />
       </video>
     </div>
     <div
@@ -38,7 +38,7 @@
     </div>
 
     <div class="about-container" data-aos="fade-in" data-aos-duration="1000">
-      <img class="about-image" :src="aboutImg" />
+      <img class="about-image" :src="aboutImg" alt="about image" />
       <div class="about-content">
         <h1 class="about-header">About SJS Homes</h1>
         <p class="about-body">

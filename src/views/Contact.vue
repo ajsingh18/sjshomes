@@ -11,7 +11,7 @@
     </div>
     <div class="contact-information-container">
       <div class="phone-container">
-        <img class="phone-icon" :src="phoneIcon" />
+        <img class="phone-icon" :src="phoneIcon" alt="phone icon" />
         <h1>Phone</h1>
         <div class="phone-numbers">
           <p>(587)-590-5343</p>
@@ -20,7 +20,7 @@
       </div>
       <div class="divider"></div>
       <div class="email-container">
-        <img class="email-icon" :src="emailIcon" />
+        <img class="email-icon" :src="emailIcon" alt="email icon" />
         <h1>Email</h1>
         <a class="email" href="mailto:sjshomes2014@gmail.com">sjshomes2014@gmail.com</a>
       </div>

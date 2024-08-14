@@ -1,7 +1,7 @@
 <template>
   <header class="main-header" ref="navRef">
     <router-link to="/" v-slot="{ href, navigate }">
-      <img class="header-logo" :src="logo" :href="href" @click="navigate" />
+      <img class="header-logo" :src="logo" :href="href" @click="navigate" alt="SJS Homes" />
     </router-link>
     <a v-if="isMobile" href="#" class="menu dropdown-animation" @click="toggleMenu()"
       ><span></span

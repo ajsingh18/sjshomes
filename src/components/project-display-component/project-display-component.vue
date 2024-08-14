@@ -1,10 +1,20 @@
 <template>
   <div class="project box-border-shadow">
-    <img width="380px" height="350px" :src="getImgUrl(img)" class="project-image" />
+    <img
+      width="380px"
+      height="350px"
+      :src="getImgUrl(img)"
+      class="project-image"
+      :alt="title + ' image'"
+    />
     <h1 class="project-title">{{ title }}</h1>
     <div class="project-details">
-      <div class="bedroom-container"><img :src="bedIcon" /> {{ bedrooms + ' bedroom' }}</div>
-      <div class="bathroom-container"><img :src="bathIcon" /> {{ bathrooms + ' bathroom' }}</div>
+      <div class="bedroom-container">
+        <img :src="bedIcon" alt="bed icon" /> {{ bedrooms + ' bedroom' }}
+      </div>
+      <div class="bathroom-container">
+        <img :src="bathIcon" alt="bath icon" /> {{ bathrooms + ' bathroom' }}
+      </div>
       <div class="size-container">{{ sqft + ' Sq. Ft.' }}</div>
     </div>
   </div>

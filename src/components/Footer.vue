@@ -1,7 +1,14 @@
 <template>
   <footer class="main-footer">
     <router-link to="/" v-slot="{ href, navigate }">
-      <img height="150px" :src="logo" v-if="!isMobile" :href="href" @click="navigate" />
+      <img
+        height="150px"
+        :src="logo"
+        v-if="!isMobile"
+        :href="href"
+        @click="navigate"
+        alt="SJS Homes"
+      />
     </router-link>
     <div class="footer-links-container">
       <h1>Quick Links</h1>
@@ -13,14 +20,16 @@
     </div>
 
     <div class="mobile-contact-container" v-if="isMobile">
-      <a href="mailto:sjshomes2014@gmail.com"> <img class="email-icon" :src="emailIcon" /></a>
-      <a href="tel:+1-780-966-1062"><img class="phone-icon" :src="phoneIcon" /></a>
+      <a href="mailto:sjshomes2014@gmail.com">
+        <img class="email-icon" :src="emailIcon" alt="email icon"
+      /></a>
+      <a href="tel:+1-780-966-1062"><img class="phone-icon" :src="phoneIcon" alt="phone icon" /></a>
     </div>
     <div class="contact-container" v-else>
       <h1 class="contact-header">Contact</h1>
-      <img class="email-icon" :src="emailIcon" />
+      <img class="email-icon" :src="emailIcon" alt="email icon" />
       <p class="email">sjshomes2014@gmail.com</p>
-      <img class="phone-icon" :src="phoneIcon" />
+      <img class="phone-icon" :src="phoneIcon" alt="phone icon" />
       <p class="phone">(780) 966-0162<br />(587)-590-5343</p>
     </div>
   </footer>

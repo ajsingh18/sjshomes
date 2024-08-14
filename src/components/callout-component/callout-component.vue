@@ -1,6 +1,6 @@
 <template>
   <div class="callout-container">
-    <img :src="img" class="callout-image" />
+    <img :src="img" class="callout-image" :alt="title + ' icon'" />
     <h1 class="callout-title">{{ title }}</h1>
     <div class="callout-description">{{ description }}</div>
     <button class="button" @click="handleCalloutClick">{{ buttonText }}</button>
