@@ -1,16 +1,6 @@
 <template>
   <head>
     <title>SJS Homes</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDYXC5806H"></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-
-      gtag('config', 'G-CDYXC5806H')
-    </script>
   </head>
   <Header :logo="headerLogo" />
   <RouterView />
