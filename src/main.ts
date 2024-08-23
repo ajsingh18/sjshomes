@@ -9,7 +9,7 @@ const app = createApp(App)
 app.use(router)
 app.use(
   createGtm({
-    id: 'G-CDYXC5806H',
+    id: 'GTM-NVHXDNH6',
     vueRouter: router
   })
 )
