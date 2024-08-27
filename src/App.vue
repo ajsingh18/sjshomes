@@ -1,6 +1,6 @@
 <template>
   <head>
-    <title>SJS Homes</title>
+    <title>SJS Homes: Home Builders | Custom Homes</title>
   </head>
   <Header :logo="headerLogo" />
   <RouterView />
