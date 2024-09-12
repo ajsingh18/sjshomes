@@ -4,27 +4,31 @@
     "title": "384 Bluff Cove, Leduc",
     "sqft": "1642",
     "bedrooms": "3",
-    "bathrooms": "3"
+    "bathrooms": "3",
+    "isSold": false
   },
   {
     "img": "397-image.png",
     "title": "397 Bluff Cove, Leduc",
     "sqft": "2315",
     "bedrooms": "3",
-    "bathrooms": "2"
+    "bathrooms": "2",
+    "isSold": false
   },
   {
     "img": "house-placeholder-image.jpg",
     "title": "500 Bluff Lane, Leduc",
     "sqft": "1692",
     "bedrooms": "3",
-    "bathrooms": "3"
+    "bathrooms": "3",
+    "isSold": true
   },
   {
-    "img": "coming-soon.png",
+    "img": "prescott-lots.jpg",
     "title": "Prescott, Spruce Grove",
     "sqft": "0",
     "bedrooms": "0",
-    "bathrooms": "0"
+    "bathrooms": "0",
+    "isSold": false
   }
 ]
