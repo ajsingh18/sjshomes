@@ -1,12 +1,15 @@
 <template>
   <div class="project box-border-shadow">
-    <img
-      width="380px"
-      height="350px"
-      :src="getImgUrl(img)"
-      class="project-image"
-      :alt="title + ' image'"
-    />
+    <div class="image-container">
+      <img
+        width="380px"
+        height="350px"
+        :src="getImgUrl(img)"
+        class="project-image"
+        :alt="title + ' image'"
+      />
+      <img height="150px" class="sold-overlay" :src="soldimg" v-if="isSold" />
+    </div>
     <h1 class="project-title">{{ title }}</h1>
     <div class="project-details">
       <div class="bedroom-container">
@@ -23,12 +26,14 @@
 <script setup lang="ts">
 import bedIcon from '/images/bed-icon.svg'
 import bathIcon from '/images/bathtub-icon.svg'
+import soldimg from '/images/sold-overlay.png'
 interface Props {
   img: string
   title: string
   sqft: number
   bedrooms: number
   bathrooms: number
+  isSold: boolean
 }
 
 const props = defineProps<Props>()
@@ -48,8 +53,18 @@ const getImgUrl = (img: string) => {
   margin-bottom: 32px;
   padding-bottom: 16px;
 
-  img {
-    border-radius: 5px;
+  .image-container {
+    position: relative;
+
+    img {
+      border-radius: 5px;
+    }
+
+    .sold-overlay {
+      position: absolute;
+      opacity: 0.5;
+      left: 0;
+    }
   }
 
   .project-title {

@@ -158,6 +158,7 @@ const submitForm = async () => {
   flex-direction: column;
   gap: 8px;
   margin-bottom: 16px;
+  padding: 0 8px;
 
   input,
   textarea {
