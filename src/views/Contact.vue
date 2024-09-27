@@ -1,5 +1,15 @@
 <template>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <teleport to="head">
+    <component :is="'script'" type="application/ld+json">
+      { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "SJS Homes", "image":
+      "https://sjshomes.ca/images/header-logo-transparent.png", "address": { "@type":
+      "PostalAddress", "streetAddress": "2017 33b Ave NW", "addressLocality": "Edmonton",
+      "addressRegion": "AB", "postalCode": "T6T 0H5", "addressCountry": "CA" }, "telephone":
+      "+1-780-966-0162", "url": "https://www.sjshomes.ca", "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su
+      09:00-17:00" }
+    </component>
+  </teleport>
   <div data-aos="fade-in" data-aos-duration="1000">
     <div class="contact-container">
       <h1>Contact Us</h1>
