@@ -167,7 +167,7 @@ const calloutClickHandler = (calloutId: string) => {
         }
 
         .about-button {
-          max-width: 150px;
+          max-width: 250px;
           margin-top: auto;
         }
       }
