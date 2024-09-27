@@ -1,9 +1,19 @@
 <template>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <teleport to="head">
+    <component :is="'script'" type="application/ld+json">
+      { "@context": "https://schema.org", "@type": "WebPage", "name": "Home", "url":
+      "https://www.sjshomes.com", "description": "Discover the perfect blend of quality and comfort
+      with SJS Homes, your trusted home developer in Edmonton. Explore our latest projects and find
+      your dream home today.", "publisher": { "@type": "Organization", "name": "SJS Homes", "logo":
+      { "@type": "ImageObject", "url": "https://sjshomes.ca/images/header-logo-transparent.png" } }
+      }
+    </component>
+  </teleport>
   <div class="home-container">
     <div class="highlight-video-container">
       <video width="100%" autoplay muted loop playsinline preload="auto">
-        <source src="/videos/withimage.mp4" type="video/mp4" />
+        <source src="/videos/Withimage.mp4" type="video/mp4" />
       </video>
     </div>
     <div
@@ -65,7 +75,9 @@
           come.
         </p>
         <router-link to="/about" v-slot="{ href, navigate }">
-          <button class="about-button button" :href="href" @click="navigate">Learn More</button>
+          <button class="about-button button" :href="href" @click="navigate">
+            Learn More About SJS Homes
+          </button>
         </router-link>
       </div>
     </div>

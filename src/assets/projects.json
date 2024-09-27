@@ -5,7 +5,7 @@
     "sqft": "1642",
     "bedrooms": "3",
     "bathrooms": "3",
-    "isSold": false
+    "isSold": true
   },
   {
     "img": "397-image.png",
@@ -16,16 +16,56 @@
     "isSold": false
   },
   {
-    "img": "house-placeholder-image.jpg",
+    "img": "500-image.jpg",
     "title": "500 Bluff Lane, Leduc",
     "sqft": "1692",
     "bedrooms": "3",
     "bathrooms": "3",
-    "isSold": true
+    "isSold": false
   },
   {
     "img": "prescott-lots.jpg",
-    "title": "Prescott, Spruce Grove",
+    "title": "89 Patriot Way, Spruce Grove",
+    "sqft": "0",
+    "bedrooms": "0",
+    "bathrooms": "0",
+    "isSold": false
+  },
+  {
+    "img": "prescott-lots.jpg",
+    "title": "91 Patriot Way, Spruce Grove",
+    "sqft": "0",
+    "bedrooms": "0",
+    "bathrooms": "0",
+    "isSold": false
+  },
+  {
+    "img": "prescott-lots.jpg",
+    "title": "93 Patriot Way, Spruce Grove",
+    "sqft": "0",
+    "bedrooms": "0",
+    "bathrooms": "0",
+    "isSold": false
+  },
+  {
+    "img": "prescott-lots.jpg",
+    "title": "95 Patriot Way, Spruce Grove",
+    "sqft": "0",
+    "bedrooms": "0",
+    "bathrooms": "0",
+    "isSold": false
+  },
+  {
+    "img": "prescott-lots.jpg",
+    "title": "97 Patriot Way, Spruce Grove",
+    "sqft": "0",
+    "bedrooms": "0",
+    "bathrooms": "0",
+    "isSold": false
+  },
+  {
+    "img": "prescott-lots.jpg",
+    "title": "99 Patriot Way, Spruce Grove",
     "sqft": "0",
     "bedrooms": "0",
     "bathrooms": "0",

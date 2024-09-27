@@ -1,5 +1,15 @@
 <template>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <teleport to="head">
+    <component :is="'script'" type="application/ld+json">
+      { "@context": "https://schema.org", "@type": "Organization", "name": "SJS Homes", "url":
+      "https://www.sjshomes.ca", "logo": "https://sjshomes.ca/images/header-logo-transparent.png",
+      "contactPoint": { "@type": "ContactPoint", "telephone": "+1-780-966-0162", "contactType":
+      "Customer Service", "areaServed": "CA", "availableLanguage": ["English"] }, "address": {
+      "@type": "PostalAddress", "streetAddress": "2017 33b Ave NW", "addressLocality": "Edmonton",
+      "addressRegion": "AB", "postalCode": "T6T 0H5", "addressCountry": "CA" } }
+    </component>
+  </teleport>
   <div data-aos="fade-in" data-aos-duration="1000">
     <div class="about-us-container">
       <h2>About Us</h2>
