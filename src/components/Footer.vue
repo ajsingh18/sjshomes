@@ -17,6 +17,9 @@
       >
       <router-link class="footer-review-link" to="/projects">Projects</router-link>
       <router-link class="footer-review-link" to="/contact">Contact</router-link>
+      <a v-if="!isMobile" class="designer-link footer-review-link" href="https://frigidits.ca/"
+        >Designed by Frigid IT Solutions</a
+      >
     </div>
 
     <div class="mobile-contact-container" v-if="isMobile">
@@ -25,6 +28,10 @@
       /></a>
       <a href="tel:+1-780-966-1062"><img class="phone-icon" :src="phoneIcon" alt="phone icon" /></a>
     </div>
+    <a v-if="isMobile" class="designer-link" href="https://frigidits.ca/"
+      >Designed by Frigid IT Solutions</a
+    >
+
     <div class="contact-container" v-else>
       <h1 class="contact-header">Contact</h1>
       <img class="email-icon" :src="emailIcon" alt="email icon" />
@@ -68,6 +75,12 @@ import { isMobile } from '@/helpers/mobile-helper'
     }
   }
 
+  .designer-link {
+    margin-top: 8px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
   .mobile-contact-container {
     margin-top: 16px;
     display: flex;
@@ -103,6 +116,10 @@ import { isMobile } from '@/helpers/mobile-helper'
       h1 {
         font-size: 24px;
         margin: 0;
+      }
+
+      .designer-link {
+        font-size: 14px;
       }
 
       .footer-review-link {
