@@ -12,7 +12,7 @@
     "title": "397 Bluff Cove, Leduc",
     "sqft": "2315",
     "bedrooms": "3",
-    "bathrooms": "2",
+    "bathrooms": "3",
     "isSold": false
   },
   {
@@ -24,51 +24,35 @@
     "isSold": false
   },
   {
-    "img": "prescott-lots.jpg",
-    "title": "89 Patriot Way, Spruce Grove",
-    "sqft": "0",
-    "bedrooms": "0",
-    "bathrooms": "0",
+    "img": "54-patriot-way.png",
+    "title": "54 Patriot Way, Spruce Grove",
+    "sqft": "1482",
+    "bedrooms": "3",
+    "bathrooms": "3",
     "isSold": false
   },
   {
-    "img": "prescott-lots.jpg",
-    "title": "91 Patriot Way, Spruce Grove",
-    "sqft": "0",
-    "bedrooms": "0",
-    "bathrooms": "0",
+    "img": "56-patriot-way.png",
+    "title": "56 Patriot Way, Spruce Grove",
+    "sqft": "1482",
+    "bedrooms": "3",
+    "bathrooms": "3",
     "isSold": false
   },
   {
-    "img": "prescott-lots.jpg",
-    "title": "93 Patriot Way, Spruce Grove",
-    "sqft": "0",
-    "bedrooms": "0",
-    "bathrooms": "0",
+    "img": "58-patriot-way.png",
+    "title": "58 Patriot Way, Spruce Grove",
+    "sqft": "1509",
+    "bedrooms": "3",
+    "bathrooms": "3",
     "isSold": false
   },
   {
-    "img": "prescott-lots.jpg",
-    "title": "95 Patriot Way, Spruce Grove",
-    "sqft": "0",
-    "bedrooms": "0",
-    "bathrooms": "0",
-    "isSold": false
-  },
-  {
-    "img": "prescott-lots.jpg",
-    "title": "97 Patriot Way, Spruce Grove",
-    "sqft": "0",
-    "bedrooms": "0",
-    "bathrooms": "0",
-    "isSold": false
-  },
-  {
-    "img": "prescott-lots.jpg",
-    "title": "99 Patriot Way, Spruce Grove",
-    "sqft": "0",
-    "bedrooms": "0",
-    "bathrooms": "0",
+    "img": "60-patriot-way.png",
+    "title": "60 Patriot Way, Spruce Grove",
+    "sqft": "1489",
+    "bedrooms": "3",
+    "bathrooms": "3",
     "isSold": false
   }
 ]
