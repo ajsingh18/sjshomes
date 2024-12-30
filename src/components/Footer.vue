@@ -17,6 +17,7 @@
       >
       <router-link class="footer-review-link" to="/projects">Projects</router-link>
       <router-link class="footer-review-link" to="/contact">Contact</router-link>
+      <router-link class="footer-review-link" to="/gallery">Gallery</router-link>
       <a v-if="!isMobile" class="designer-link footer-review-link" href="https://frigidits.ca/"
         >Designed by Frigid IT Solutions</a
       >

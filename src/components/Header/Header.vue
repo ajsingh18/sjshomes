@@ -19,6 +19,9 @@
             <router-link to="/projects" @click="toggleMenu()">Projects</router-link>
           </li>
           <li class="mobile-nav-item">
+            <router-link to="/gallery" @click="toggleMenu()">Gallery</router-link>
+          </li>
+          <li class="mobile-nav-item">
             <router-link to="/contact" @click="toggleMenu()">Contact</router-link>
           </li>
         </ul></expand-transition
@@ -28,6 +31,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/projects">Projects</router-link>
+      <router-link to="/gallery">Gallery</router-link>
       <router-link to="/contact">Contact</router-link>
     </nav>
   </header>

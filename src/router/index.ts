@@ -9,9 +9,9 @@ const router = createRouter({
       name: 'home',
       component: Home,
       meta: {
-        title: 'Home',
+        title: 'SJS Homes | Custom Home Builders in Edmonton & Surrounding Areas',
         description:
-          'Discover the perfect blend of quality and comfort with SJS Homes, your trusted home developer in Edmonton. Explore our latest projects and find your dream home today.'
+          'Welcome to SJS Homes, Edmonton’s trusted custom home builders. Discover exceptional craftsmanship, modern designs, and quality living tailored to your lifestyle.'
       }
     },
     {
@@ -22,29 +22,39 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/About.vue'),
       meta: {
-        title: 'About',
+        title: 'About SJS Homes | Edmonton’s Custom Home Development Experts',
         description:
-          'Learn about SJS Homes, where we create high-quality, custom-built homes in Edmonton. With a customer-first approach, we turn your house into a cherished home.'
+          'Learn about SJS Homes, your premier custom home builders in Edmonton. Discover our commitment to quality, personalized designs, and exceptional customer service.'
       }
     },
     {
       path: '/contact',
-      name: 'Contact',
+      name: 'contact',
       component: () => import('../views/Contact.vue'),
       meta: {
-        title: 'Contact',
+        title: 'Contact SJS Homes | Start Your Custom Home Journey Today',
         description:
-          'Get in touch with SJS Homes today. Whether you have questions or are ready to start your home-building journey, our team is here to help you every step of the way.'
+          'Contact SJS Homes for all your custom home building needs in Edmonton. Let’s discuss your dream home and how we can turn it into reality with expert craftsmanship.'
       }
     },
     {
       path: '/projects',
-      name: 'Projects',
+      name: 'projects',
       component: () => import('../views/Projects.vue'),
       meta: {
-        title: 'Projects',
+        title: 'SJS Homes Projects | Custom Homes in Edmonton & Beyond',
         description:
-          'Explore the current projects by SJS Homes in Edmonton. View our latest developments and find out how we can build the home of your dreams.'
+          'Explore SJS Homes’ custom home projects in Edmonton. See our portfolio of modern designs, high-quality builds, and tailored homes crafted for unique lifestyles.'
+      }
+    },
+    {
+      path: '/gallery',
+      name: 'gallery',
+      component: () => import('../views/Gallery.vue'),
+      meta: {
+        title: 'Custom Home Gallery | SJS Homes – Edmonton’s Luxury Builders',
+        description:
+          'View SJS Homes’ custom home gallery showcasing luxury builds, modern designs, and tailored craftsmanship in Edmonton. Discover inspiration for your dream home today.'
       }
     }
   ]
