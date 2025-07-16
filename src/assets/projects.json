@@ -13,7 +13,7 @@
     "sqft": "2315",
     "bedrooms": "3",
     "bathrooms": "3",
-    "isSold": false
+    "isSold": true
   },
   {
     "img": "500-image.jpg",
@@ -40,7 +40,7 @@
     "isSold": false
   },
   {
-    "img": "58-patriot-way.png",
+    "img": "58-patriot-way.jpg",
     "title": "58 Patriot Way, Spruce Grove",
     "sqft": "1509",
     "bedrooms": "3",
